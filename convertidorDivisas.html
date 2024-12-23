@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor de Divisas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1>Convertidor de Divisas</h1>
+
+        <!-- formulario para ingresar monto y seleccionar el tipo de moneda -->
+         <div class="container">
+            <label for="amount">Monto:</label>
+            <input type="number" id="amount" placeholder="Ingresa Monto">
+         </div>
+
+         <div>
+            <label for="fromCurrency">Moneda de Origen:</label>
+            <select id="fromCurrency"></select> <br>
+         </div>
+
+         <div>
+            <label for="toCurrency">Moneda de destino:</label>
+            <select id="toCurrency"></select> <br> <br>
+         </div>
+
+         <button id="convertButton">Convertir</button>
+
+         <button id="clearButton">Limpiar</button>
+
+         <!-- mostrar el resultado  -->
+          <div id="result"></div>
+    </div>
+
+    <!-- Interruptor de cambio de tema -->
+    <label class="switch">
+      <input type="checkbox" id="theme-toggle">
+      <span class="slider"></span>
+    </label>
+
+    <script src="script.js"></script>
+</body>
+</html>
